@@ -1,0 +1,81 @@
+<RelativeLayout android:id="@+id/error_view"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:fontFamily="@font/cav"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/Padding_10"
+            android:textSize="25sp"
+            android:background="@drawable/call_button_bk"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lv2"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="update.json"/>
+
+        <TextView
+
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textSize="18sp"
+            android:layout_marginTop="-40dp"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/Padding_10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/in_app_register"
+            />
+
+
+        <Button
+            android:id="@+id/inApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try InApp"
+            android:drawableStart="@drawable/ic_internet"
+            android:background="@drawable/call_button_bk"
+            android:fontFamily="@font/cav"
+            android:padding="@dimen/Padding_10"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/Padding_10"/>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPEN WEB"
+            android:layout_marginBottom="@dimen/Padding_30"
+            android:drawableStart="@drawable/ic_internet"
+            android:background="@drawable/call_button_bk"
+            android:fontFamily="@font/cav"
+            android:padding="@dimen/Padding_10"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/Padding_10"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

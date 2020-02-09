@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/Padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        app:cardCornerRadius="@dimen/Padding_10"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/eventImage"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            android:scaleType="fitXY"/>
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Padding_10"
+            android:layout_gravity="center"/>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="-70dp"
+            app:cardCornerRadius="@dimen/Padding_10"
+            app:cardElevation="10dp"
+            android:id="@+id/cardClicker"
+            app:cardPreventCornerOverlap="false"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:clipChildren="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="125dp">
+
+            <RelativeLayout
+                android:padding="@dimen/Padding_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/layout1"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/Padding_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="9"
+                        android:id="@+id/timedTV"
+                        android:fontFamily="@font/cav"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/timePost"
+                        android:text="AM"
+                        android:fontFamily="@font/cav"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    
+                    
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line"
+                    android:background="#E8EAF6"
+                    android:layout_toEndOf="@id/layout1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/center_element"
+                    android:layout_toEndOf="@id/line"
+                    android:orientation="vertical"
+
+                    android:gravity="center"
+                   android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/eventName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cav"
+                        android:textColor="@color/colorPrimary"
+                        android:text="TESTING"/>
+
+                    <TextView
+                        android:id="@+id/eventLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cav"
+                        android:text="Shanti Devi Mital"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

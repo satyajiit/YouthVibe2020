@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NotificationsActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"/>
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_below="@id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+
+
+
+<ScrollView
+    android:id="@+id/shimmerLayout"
+    android:layout_width="match_parent"
+    android:layout_below="@id/toolbar_shadow"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <include layout="@layout/data_placeholder_layout" />
+
+        <include layout="@layout/data_placeholder_layout" />
+
+        <include layout="@layout/data_placeholder_layout" />
+        <include layout="@layout/data_placeholder_layout" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msgRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_shadow"/>
+
+
+
+
+</RelativeLayout>

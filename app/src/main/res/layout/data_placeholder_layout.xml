@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_below="@id/toolbar_shadow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginStart="@dimen/Padding_10"
+    android:layout_marginEnd="@dimen/Padding_10"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/tools">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        shimmer:shimmer_duration="800"
+        >
+
+    <LinearLayout
+        android:padding="@dimen/Padding_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="80dp"
+            android:layout_height="@dimen/placeholderTextHeight"
+            android:background="@color/background" />
+
+        <View
+            android:layout_width="230dp"
+            android:layout_marginTop="@dimen/Padding_10"
+            android:layout_height="@dimen/placeholderTextHeight"
+            android:background="@color/background" />
+        <View
+            android:layout_width="230dp"
+            android:layout_marginTop="@dimen/Padding_10"
+            android:layout_height="@dimen/placeholderTextHeight"
+            android:background="@color/background" />
+
+
+        <View
+            android:layout_width="230dp"
+            android:layout_marginTop="@dimen/Padding_10"
+            android:layout_height="@dimen/placeholderTextHeight"
+            android:background="@color/background" />
+
+
+
+        <View
+            android:layout_width="230dp"
+            android:layout_marginTop="@dimen/Padding_10"
+            android:layout_height="@dimen/placeholderTextHeight"
+            android:background="@color/background" />
+
+    </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/Padding_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/Padding_40"
+            android:layout_marginEnd="@dimen/Padding_40"
+            android:layout_height="320dp"
+            app:cardCornerRadius="@dimen/Padding_10"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/cardClicker"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    shimmer:shimmer_duration="800"
+                    >
+
+
+                <View
+                    android:padding="@dimen/Padding_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="#ddd"/>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/Padding_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        shimmer:shimmer_duration="800"
+                        >
+
+                    <View
+                        android:id="@+id/sponsorName"
+                        android:text="Coca Cola India"
+                        android:layout_centerHorizontal="true"
+                     android:background="@color/background"
+                     android:layout_alignParentStart="true"
+                        android:paddingStart="@dimen/Padding_10"
+                        android:paddingEnd="@dimen/Padding_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+

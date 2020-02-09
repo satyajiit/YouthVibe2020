@@ -1,0 +1,46 @@
+<androidx.cardview.widget.CardView android:id="@+id/faq1"
+    android:layout_marginStart="@dimen/Padding_10"
+    android:layout_marginEnd="@dimen/Padding_10"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/faqTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textColor="@color/material_red"
+            android:paddingStart="@dimen/Padding_10"
+            android:paddingEnd="@dimen/Padding_10"
+            android:paddingTop="@dimen/Padding_10"
+            android:paddingBottom="5dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/ansTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textColor="@color/colorPrimary"
+            android:paddingStart="@dimen/Padding_10"
+            android:paddingEnd="@dimen/Padding_10"
+            android:paddingBottom="@dimen/Padding_10"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

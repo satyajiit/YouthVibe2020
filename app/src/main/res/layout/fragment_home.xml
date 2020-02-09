@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:id="@+id/lay1"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/youthVibe"
+        android:animateLayoutChanges="true"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/vibeCrd"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/Padding_20"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:src="@drawable/youth_vibe"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/YouthVibe_20"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cav"
+                    android:textSize="20sp"
+                    android:textColor="@color/material_red"
+                    android:text="@string/txt_2020"/>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sponsors"
+        android:layout_toEndOf="@id/youthVibe"
+        android:animateLayoutChanges="true"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/sponsorsCrd"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/Padding_20"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sponsor"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cav"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/sponsors"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_below="@id/lay1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/team"
+        android:animateLayoutChanges="true"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/crdEnq"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/Padding_20"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:src="@drawable/enq"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cav"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/enquiry"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/enquiry"
+            android:layout_toEndOf="@id/youthVibe"
+            android:animateLayoutChanges="true"
+            android:layout_width="156dp"
+            android:layout_height="156dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+
+            <LinearLayout
+                android:id="@+id/teamLinearClicker"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/Padding_20"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/team"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cav"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/team"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_below="@id/lay2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/campus_map"
+                android:animateLayoutChanges="true"
+                android:layout_width="156dp"
+                android:layout_height="156dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/mapLinearClicker"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/Padding_20"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/map"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cav"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/campus_map"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/accommodation"
+                android:animateLayoutChanges="true"
+                android:layout_width="156dp"
+                android:layout_height="156dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/faq_lin"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/Padding_20"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/faq"/>
+
+
+                    <TextView
+                        android:id="@+id/faq_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cav"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:text="FAQ"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

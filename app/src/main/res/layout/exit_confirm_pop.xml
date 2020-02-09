@@ -1,0 +1,77 @@
+<RelativeLayout android:id="@+id/error_view"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:fontFamily="@font/cav"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/Padding_10"
+            android:textSize="25sp"
+            android:background="@drawable/oval_btn"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lv2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_fileName="exit.json"/>
+
+        <TextView
+
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/Padding_10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/exit"
+            />
+
+
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            android:background="@drawable/oval_btn"
+            android:fontFamily="@font/cav"
+            android:padding="@dimen/Padding_10"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/Padding_10"/>
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:background="@drawable/oval_btn"
+            android:fontFamily="@font/cav"
+            android:padding="@dimen/Padding_10"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/Padding_30"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/Padding_10"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

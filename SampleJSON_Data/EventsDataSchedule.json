@@ -1,0 +1,105 @@
+
+{
+  "DAY1": {
+
+    "ICSS Cyber Security Workshop" : [0, "Conference Room"],
+    "Fiz Robotics IOT Workshop" : [0, "Conference Room"],
+    "Kabaddi Men" : [0,"BH-4 Ground"],
+    "Basket Ball Men" : [0,"Basket Ball Ground"],
+    "Basket Ball Women" : [0,"GH-2 Basket Ball Court"],
+    "Chess" : [0,"Block 13 Basement"],
+    "Badminton Women" : [0,"Indoor Stadium"]
+
+
+
+  },
+
+  "DAY2": {
+
+	"Julia Bliss Live" : [17, "Unipolis"],
+    "Fiz Robotics Robotics Workshop" : [0, "Conference Room"],
+    "Product making" : [9,"Shanti Devi Mittal Auditorium"],
+    "Paridhan":[9,"Baldev Raj Mittal Unipolis"],
+    "Nritya Natraj Solo":[9,"Baldev Raj Mittal Auditorium "],
+    "Voice of Youth Vibe":[9,"Block 18 Stage"],
+    "Stage Play":[9,"Shanti Devi Mittal Auditorium"],
+    "The Boards Room":[9,"Block 14-Conference Room"],
+    "Ad Mad Show":[9,"Block 14-101 L"],
+    "Ultimate Spokes Person Qualifiers":[9,"Block 14-301 L"],
+    "Word's Roll ENG":[9,"Block 14-501 L"],
+    "FotoFever Reporting":[9,"Block 13-306"],
+    "Short Film Making Reporting":[9,"Block 13-306"],
+    "Photo Story Reporting":[9,"Block 13-306 "],
+    "Codzilla":[9,"Block 29-301 L"],
+    "RC Plane Qualifiers":[9,"BH-4 Ground"],
+    "Virasat Live & Recorded" : [ 13,"Baldev Raj Mittal Auditorium"],
+    "Mr & Miss YV Round 1":[13,"Shanti Devi Mittal Auditorium"],
+    "Rapstar":[13,"Block 18 Stage"],
+    "Web Tactics":[15,"Block 14 Lab-312"]
+  },
+
+
+  "DAY3" : {
+
+    "Photography Workshop & Marathon" : [0, "Conference Room"],
+    "Story on Canvas":[9,"Shanti Devi Mittal Auditorium"],
+    "Virsa":[9,"Block 18 Stage "],
+    "Mr & Miss YV":[9,"Shanti Devi Mittal Auditorium"],
+    "Street Play":[9,"Sunken Stage"],
+    "Mime Competition":[9,"Baldev Raj Mittal Auditorium"],
+    "MasterPreneur":[9,"Block 14-Conference Room"],
+    "Brand Fight":[9,"Block 14-101 L"],
+    "Kingdom of Poets HIN/ENG":[9,"Block 14-501 L"],
+    "Ultimate Spokes Person":[9,"14-301 L"],
+    "Best out of Waste":[9,"Baldev Raj Mittal Auditorium"],
+    "Anime Fiesta":[9,"Block 29-301 L"],
+    "RC Plane Finale":[9,"BH-4 Ground"],
+    "Atrangi":[9,"Baldev Raj Mittal Auditorium"],
+    "Line Follower Qualifiers":[10,"Block 25 Basement"],
+    "Best Physique Men":[12,"Baldev Raj Mittal Unipolis"],
+    "Maha Quiz Prelims":[14,"Block 14-301 L"],
+    "Drone Racing Qualifiers":[14,"BH-4 Ground"]
+
+
+
+  },
+
+
+
+  "DAY4" : {
+
+    "Sunburn Lost Stories" : [17, "Unipolis"],
+    "Photography Workshop & Marathon" : [0, "Conference Room"],
+    "Face Painting":[9,"Sunken Stage"],
+    "Dancing Soul":[9,"Baldev Raj Mittal Auditorium "],
+    "Battle of Bands":[9,"Block 18 Stage "],
+    "Marathon":[9,"DSW Stage"],
+    "Skit Competition":[14,"Shanti Devi Mittal Auditorium"],
+    "Call of Mind":[9,"Block 14-Conference Room"],
+    "Pen-trament HIN/ENG":[9,"Block 14-101 L"],
+    "Maha Quiz Mains":[9,"Block 14-301 L"],
+
+    "Make an App":[9,"Block 29-301 L"],
+
+
+    "Line Follower Finale":[10,"Block 25 Basement"],
+
+    "Story on Canvas Exhibition":[12,"Sunken Stage"],
+    "Product making Exhibition":[12,"Sunken Stage"],
+
+    "Drone Racing Finale":[13,"BH-4 Ground"],
+
+
+    "Short Film Making Mains":[14,"Block 14-501 L"],
+
+    "FotoFever Mains":[16,"Block 13-306"],
+    "Photo Story Mains":[16,"Block 13-306"]
+
+
+
+
+  }
+
+
+
+}

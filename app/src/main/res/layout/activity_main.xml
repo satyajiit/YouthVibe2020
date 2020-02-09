@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"
+        />
+
+
+        <FrameLayout
+            android:layout_below="@id/tool"
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_above="@id/navigation"
+            android:layout_height="wrap_content" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/fab"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/navigation"
+        android:src="@drawable/ic_chat"
+        app:elevation="6dp"
+        android:backgroundTint="@color/material_red"
+        android:layout_alignParentEnd="true"
+        app:rippleColor="@color/colorAccent"
+        android:layout_marginEnd="@dimen/Padding_20"
+        android:layout_marginBottom="@dimen/Padding_20"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@color/colorPrimary"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@drawable/selector"
+        android:theme="@style/navStyle"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/btn_nav" />
+
+
+</RelativeLayout>

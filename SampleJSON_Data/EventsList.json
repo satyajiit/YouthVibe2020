@@ -1,0 +1,186 @@
+{
+  "MUSIC": [
+
+    "VIRSA: FOLK GROUP SINGING",
+    "VOICE OF YOUTH VIBE - SOLO",
+    "VOICE OF YOUTH VIBE - GROUP",
+    "BATTLE OF BANDS (INDIAN/WESTERN)",
+    "RAPSTAR"
+
+  ],
+
+
+  "LITERARY" : [
+
+    "KINGDOM OF POETS (ENGLISH/HINDI)",
+    "PEN-TRAMENT - YV CREATIVE WRITING (HINDI/ENGLISH)",
+    "MAHA QUIZ",
+    "YV ULTIMATE SPOKESPERSON (HINDI/ENGLISH)",
+    "WORD’S ROLL – GAME OF WORDS (ENGLISH)"
+
+  ],
+
+  "ART & CRAFT" : [
+
+    "FACE PAINTING",
+    "PRODUCT MAKING COMPETITION",
+    "STORY ON CANVAS"
+
+  ],
+
+  "MEDIA" : [
+
+    "FOTOFEVER",
+    "SHORT FILM MAKING",
+    "PHOTO STORY"
+
+
+  ],
+
+  "THEATRE" : [
+
+    "SKIT COMPETITION",
+    "STREET PLAY COMPETITION",
+    "MIME COMPETITION",
+    "ATRANGI: STAND-UP COMEDY/MONO ACT/HYSTRONICS/MIMICRY/BEAT BOXING",
+    "STAGE PLAY COMPETITION"
+
+
+  ],
+
+  "DANCE" : [
+
+    "VIRASAT (LIVE & RECORDED): FOLK GROUP DANCE",
+    "DANCING SOUL: FREESTYLE/WESTERN GROUP DANCE SOLO",
+    "DANCING SOUL: FREESTYLE/WESTERN GROUP DANCE GROUP",
+    "NRITYA NATRAJ: CLASSICAL/SEMI-CLASSICAL DANCE"
+
+
+  ],
+
+  "LIFESTYLE" : [
+
+    "MR. & MISS YOUTH VIBE 2020",
+    "PARIDHAN: THE FASHION PARADE"
+
+  ],
+
+  "SOCIAL" : [
+
+    "BEST OUT OF WASTE",
+    "YV MARATHON - 6KM"
+
+
+  ],
+
+  "SPORTS" : [
+
+    "BASKET BALL (MEN & WOMEN)",
+    "KABADDI",
+    "CHESS",
+    "BADMINTON(WOMEN)",
+    "BEST PHYSIQUE (MEN)"
+
+
+
+
+  ],
+
+
+  "TECHNICAL" : [
+
+
+    "ANIME FIESTA",
+
+    "CODZILLA",
+    "DRONE RACING",
+    "LINE FOLLOWER (DARK HORSE)",
+    "MAKE-AN-APP",
+    "RC PLANE (SKY HIGH)",
+    "WEB TACTICS"
+
+  ],
+
+
+  "MANAGEMENT" : [
+
+    "AD-MAD SHOW",
+    "BRAND FIGHT",
+    "CALL OF MIND",
+    "MASTER PRENEUR",
+
+    "THE BOARDS ROOM"
+  ],
+
+  "PRO_NIGHTS": {
+
+    "Sunburn: Lost Stories" : {
+
+      "date" : "16/02/20",
+      "time" : "5 PM",
+      "venue" : "Unipolis",
+      "link" : "https://www.youtube.com/watch?v=3xQrYjEywO8"
+
+    },
+	 "Julia Bliss Live" : {
+
+      "date" : "14/02/20",
+      "time" : "5 PM",
+      "venue" : "Unipolis",
+      "link" : "https://youtu.be/1hCpWuyQzGo"
+
+    }
+
+  },
+
+  "WORKSHOPS" : {
+
+
+    "ICSS Cyber Security Workshop" : {
+
+      "regFee" : "200",
+      "startDate" : "13/02/2020",
+      "endDate" : "13/02/2020",
+      "days" : "1",
+      "venue" : "Conference Room",
+      "link" : "http://youthvibe.lpu.in/workshop"
+    },
+    "Fiz Robotics: IOT Workshop" : {
+
+      "regFee" : "350",
+      "startDate" : "13/02/2020",
+      "endDate" : "13/02/2020",
+      "days" : "1",
+      "venue" : "Conference Room",
+      "link" : "http://youthvibe.lpu.in/workshop"
+    },
+    "Fiz Robotics: Robotics Workshop" : {
+
+      "regFee" : "350",
+      "startDate" : "14/02/2020",
+      "endDate" : "14/02/2020",
+      "days" : "1",
+      "venue" : "Conference Room",
+      "link" : "http://youthvibe.lpu.in/workshop"
+    },
+    "Travelling Monday: Photography Workshop & Marathon" : {
+
+      "regFee" : "300",
+      "startDate" : "15/02/2020",
+      "endDate" : "16/02/2020",
+      "days" : "2",
+      "venue" : "Conference Room",
+      "link" : "http://youthvibe.lpu.in/workshop"
+    }
+
+
+
+
+  }
+
+
+
+
+
+
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool"
+        layout="@layout/toolbar"/>
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_below="@id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+<ScrollView
+    android:layout_below="@id/toolbar_shadow"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/Padding_40"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/login_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+
+            <include
+                android:id="@+id/lgn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                layout="@layout/layout_login"/>
+
+
+
+
+        </LinearLayout>
+
+
+<!--        <Button-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_below="@id/login_lay"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/cav"-->
+<!--            android:onClick="startIntentWithoutLogin"-->
+<!--            android:text="SKIP"-->
+<!--            android:textSize="21sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:background="@drawable/oval_btn2"/>-->
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
+
+</RelativeLayout>
+
+

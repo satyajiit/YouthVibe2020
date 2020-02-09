@@ -1,0 +1,124 @@
+{
+
+  "CORE" : {
+
+    "Aman Kumar": {
+      "des": "Event convener",
+      "url": "youthvibe@lpu.co.in",
+      "img": "aman_kumar.jpg"
+    },
+    "Anupam Adarsh": {
+      "des": "Event Co-Convener",
+      "url": "9915742902",
+      "img": "anupam_adarsh.jpg"
+    },
+    "Piyush Kumar": {
+      "des": "Overall Technical Wing",
+      "url": "8709483359",
+      "img": "piyush_kumar.jpg"
+    },
+    "Shailesh Shahi": {
+      "des": "Hospitality & Accomodation",
+      "url": "https://www.facebook.com/shailesh.shahi.7330",
+      "img": "shailesh_shahi.jpg"
+    },
+    "Abhishek Kumar": {
+      "des": "Informals & Workshop",
+      "url": "https://www.facebook.com/profile.php?id=100009045764427",
+      "img": "abhishek_kumar.jpg"
+    },
+    "Anupam Sirohi": {
+      "des": "Event Management Wing",
+      "url": "https://www.facebook.com/profile.php?id=100009686167731",
+      "img": "anupam_sirohi.jpg"
+    },
+    "Kunwar Shailjakant": {
+      "des": "Sponsors and Marketing",
+      "url": "7355295373",
+      "img": "shailjakant.jpg "
+    },
+    "Somu Barua": {
+      "des": "Overall Relations Wing",
+      "url": "9575149766",
+      "img": "somu_barua.jpg"
+    },
+    "Tanishq Biswas": {
+      "des": "E-Campaign & Design Wing",
+      "url": "https://www.facebook.com/tanishq.biswas",
+      "img": "tanishq_biswas.jpg"
+    },
+    "Vishal Singh": {
+      "des": "Technical Event Coordinator",
+      "url": "https://www.facebook.com/profile.php?id=100003235896687",
+      "img": "vishal_singh.jpg"
+    },
+    "Debam Debasis": {
+      "des": "YV Production",
+      "url": "https://google.in",
+      "img": "debam_debasis.jpg"
+    }
+
+
+  },
+
+  "DEV" : {
+    "Satyajit Pradhan": {
+      "des": "App Developer",
+      "url": "https://satyajiit.xyz",
+      "img": "Satyajit.jpg"
+    },
+    "Ayush": {
+      "des": "Web Developer",
+      "url": "https://Facebook.com/ayush4351",
+      "img": "Ayush.jpg"
+    },
+
+    "Subham": {
+      "des": "Web Developer",
+      "url": "https://techlious.com/",
+      "img": "Subham.jpg"
+    },
+    "Bipul": {
+      "des": "Web Developer",
+      "url": "https://fb.com/Bipul.poudel.98",
+      "img": "Vipul.jpg"
+    },
+
+    "Havilah" : {
+
+      "des": "Graphic Designer",
+      "url": "https://behance.net/havilahs1",
+      "img": "Havillah.jpg"
+
+}
+
+  },
+  
+  
+    "AUTH" : {
+	
+	
+	
+	 "Sorabh Lakhanpal": {
+      
+	  "des": "Oraganising President",
+      "url": "youthvibe@lpu.co.in",
+      "img": "Sorabh.jpg"
+		
+	},
+    "Kuldip Kumar": {
+	
+      "des": "Organising Secretary",
+      "url": "youthvibe@lpu.co.in",
+      "img": "Kuldip.jpg"
+
+	}
+	
+	}
+	
+	
+	
+  
+
+
+}

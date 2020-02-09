@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.SponsorsActivity">
+
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"
+        />
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_below="@id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationLottie"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="update.json"/>
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/sponsorPageTv"
+        android:layout_below="@id/animationLottie"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:elevation="@dimen/Padding_30"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="-50dp"
+        android:text="No Sponsors yet.\nClick here to become a sponsor."
+        android:fontFamily="@font/cav"/>
+
+    <ScrollView
+        android:id="@+id/shimmer_view_container"
+        android:layout_below="@id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/data_placeholder_sponsors"/>
+        <include layout="@layout/data_placeholder_sponsors"/>
+        <include layout="@layout/data_placeholder_sponsors"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sponsorsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_shadow"/>
+
+</RelativeLayout>

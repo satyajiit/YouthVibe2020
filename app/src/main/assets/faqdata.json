@@ -1,0 +1,51 @@
+{
+
+  "RegisGeneral" : {
+
+    "What is the last date of the registration process for YouthVibe 2020?" : "The last date for registration is 10th February 2020.",
+    "How do I register for Youth Vibe?" : "The registration link for YouthVibe is available at youthvibe.lpu.in. For further registration details, contact our call center at 8559048841",
+    "What is the YV number?" : "YV number is a unique number that will be allotted to each participant on registering for YouthVibe. It helps us distinguish between the thousands of students who come to attend our fest.",
+    "Is the entry free?" : "Only those who have registered themselves can enter the university premises and attend YouthVibe 2020.",
+    "Who should I contact in case of an emergency during Youth Vibe?" : "You can check the App Enquiry Section.",
+    "Are cars allowed inside? Is parking available?" : "Yes, cars are allowed inside the campus. There will be a designated parking areas for them.",
+    "How can I go to LPU?" : "LPU is easily accessible by car as it lies on the Jalandhar-Delhi G.T. Road. The nearest railway stations are- Phagwara Junction, Jalandhar Cantt, and Jalandhar City. The nearest airport is the Sri Guru Ram Dass Jee International Airport, Amritsar.",
+    "How far is LPU from the nearest airport?" : "It takes approximately 2 hrs (114km) to travel from the airport to LPU.",
+    "Is money refundable?" : "No Money is non-refundable in any case.",
+    "What is the theme of Youth Vibe this year?" : "The theme of YouthVibe 2020 is Equity, Diversity, Inclusivity."
+  },
+  "General" : {
+
+    "What are the criteria for cash prizes?" : "In solo/duet/group event, trophies will be given to the winner and runner up\nFirst and Second prize will be given only when participation exceeds 8 Externals for the solo Event and 6 Externals for the Duet/Group Event\nHowever, the E-certificate of merit and trophy will be awarded to the winners even if the participation will not meet the previous condition.\nParticipation E-certificates will be provided to all participants through online mode. (Soft Copy)\nE-Certificates of Merit will be provided to the Winner and the 1st Runner's Up only.\nIn Group/Team/Duet events, winner will be awarded with a single trophy to the entire team",
+    "What is the policy for requirements?" : "All the material required for Technical competitions are to be brought by the participants.",
+    "Bollywood songs allowed?" : "Bollywood songs in any event will not be allowed except patriotic songs and album songs.",
+    "Accomodation allotment" : "Accomodation will be on first come first serve basis.",
+    "Important Note" : "Organizing Committee reserves the right to make changes in the Event and the Event Rule Book. In case, decision of organizing committee will be final and a binding."
+
+
+  },
+
+  "Accom" : {
+
+    "Would any transportation services be provided to reach the campus?" : "We have shuttle bus services from our nearby railway stations.",
+    "What is the Campus Ambassador program?" : " The campus ambassador will play a key role in spreading awareness about YouthVibe in their respective campuses. They will be provided with exciting incentives and goodies for their hard work.",
+    "Where will the accommodation be provided?" : "Accommodation will be provided inside the campus, in various hostels.",
+    "Does the accommodation fee include the food facility as well?" : "No, it doesn't.",
+    "What is the procedure to be followed after we reach LPU?" : "Once inside our campus, we have registration desks set up at the entrance, from where you will be guided to your respective locations."
+  },
+  "Competition" : {
+
+    "Who can participate in these competitions? Is there any fee involved for registration?" : "Students who are currently studying in any university or college can participate in YouthVibe 2020. The fees for registration is Rs. 100 per person per event.",
+    "Are on-spot registrations allowed during the fest?" : "Yes, on-spot registrations are allowed.",
+    "What is the date, time and venue for these competitions?" : "The entire schedule for YouthVibe 2020 is available at our website youthvibe.lpu.in"
+  },
+
+  "Multi" : {
+
+    "I have a question that was not answered here. What do I do?" : "You can contact our call center at 8559048841 or use the live chat",
+    "Can I participate in these competitions directly during Youth Vibe?" : "LPU students have to attend our in-campus qualifiers to participate in YouthVibe 2020. Students belonging to other universities can directly participate in YouthVibe 2020."
+
+
+  }
+
+
+}

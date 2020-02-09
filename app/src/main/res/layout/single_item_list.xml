@@ -1,0 +1,33 @@
+<androidx.cardview.widget.CardView
+
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:padding="@dimen/Padding_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textSize="14sp"
+            android:text="BATTLE OF BANDS"/>
+
+
+
+
+</androidx.cardview.widget.CardView>

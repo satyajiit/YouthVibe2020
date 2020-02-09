@@ -1,0 +1,80 @@
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardClicker"
+
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+
+        android:padding="@dimen/Padding_15"
+        android:orientation="vertical"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+
+
+        android:id="@+id/clicker"
+        android:weightSum="2"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/eventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textColor="@color/material_red"
+            android:textSize="16sp"
+            android:text="BATTLE OF BANDS"/>
+
+
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/teamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haryanvi folk"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/cav"/>
+
+        <TextView
+            android:id="@+id/teamId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TV202000069"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/cav"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

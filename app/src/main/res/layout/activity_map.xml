@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MapActivity">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"
+        />
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_below="@id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+
+    <com.google.android.gms.maps.MapView
+        android:layout_below="@id/toolbar_shadow"
+        android:id="@+id/mapView"
+        android:layout_marginTop="-3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <View
+        android:id="@+id/itemm"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/Padding_50"
+        android:layout_height="200dp"/>
+
+    <Button
+        android:id="@+id/btn_loc"
+        android:layout_below="@id/itemm"
+        android:onClick="targetCurrentLocation"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/map_btn"
+        android:gravity="center"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+       android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-32dp"/>
+
+    <ImageView
+        android:layout_below="@id/itemm"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:onClick="targetCurrentLocation"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentEnd="true"
+        android:elevation="@dimen/Padding_10"
+        android:layout_marginEnd="@dimen/Padding_20"
+        android:src="@drawable/ic_my_loc"/>
+
+
+
+
+</RelativeLayout>

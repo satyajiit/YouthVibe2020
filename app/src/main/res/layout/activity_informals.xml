@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".activity.InformalsActivity">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"
+        />
+
+
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_below="@id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/team"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:layout_centerInParent="true"
+        android:animateLayoutChanges="true"
+        android:layout_width="166dp"
+        android:layout_height="166dp"
+        app:cardCornerRadius="5dp"
+        android:onClick="startProNights"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/events_lin"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:onClick="startProNights"
+            android:gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_pro_nights"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cav"
+                android:textSize="19sp"
+                android:layout_marginTop="@dimen/padding_10"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="PRO NIGHTS"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

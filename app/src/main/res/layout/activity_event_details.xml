@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vibeActivity.EventDetailsActivity">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"
+        />
+
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_below="@id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+
+    <ScrollView
+        android:layout_below="@id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/EventImg"
+        android:layout_width="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_height="290dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/eventImage"
+            android:scaleType="fitXY"
+            android:padding="@dimen/Padding_10"
+            android:layout_above="@id/eventTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <TextView
+            android:id="@+id/eventTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6A1B9A"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="TEST"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/cav"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                android:id="@+id/lay"
+                android:layout_marginTop="-10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:fillViewport="true"
+                android:layout_below="@id/EventImg">
+
+                <androidx.cardview.widget.CardView
+                    app:cardUseCompatPadding="true"
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="110dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_width="118dp"
+                            android:layout_height="match_parent">
+
+
+
+                            <TextView
+                                android:id="@+id/teamSizeTV"
+                                android:gravity="center"
+                                android:fontFamily="@font/cav"
+                                android:text="3-12 "
+                                android:textSize="20sp"
+                                android:textColor="#000"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"/>
+
+                            <TextView
+                                android:paddingStart="5dp"
+                                android:paddingEnd="0dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/cav"
+                                android:text="TEAM SIZE"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+
+
+                        <View
+                            android:background="#25000000"
+                            android:layout_gravity="center"
+                            android:layout_width="0.6dp"
+                            android:layout_height="65dp"/>
+
+
+                        <LinearLayout
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:layout_width="118dp"
+                            android:layout_height="match_parent">
+
+
+
+                            <TextView
+                                android:id="@+id/firstPrizeTV"
+                                android:gravity="center"
+                                android:fontFamily="@font/cav"
+                                android:text="₹10k"
+                                android:textSize="20sp"
+                                android:textColor="@color/material_red"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"/>
+
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/cav"
+                                android:text="1ST PRIZE"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="#25000000"
+                            android:layout_gravity="center"
+                            android:layout_width="0.6dp"
+                            android:layout_height="65dp"/>
+
+
+                        <LinearLayout
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:layout_width="118dp"
+                            android:layout_height="match_parent">
+
+
+
+                            <TextView
+                                android:id="@+id/secondPrizeTV"
+                                android:gravity="center"
+                                android:fontFamily="@font/cav"
+                                android:text="₹5000"
+                                android:textSize="20sp"
+                                android:textColor="@color/primaryTextColor"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"/>
+
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/cav"
+                                android:text="2ND PRIZE"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                        <View
+                            android:background="#25000000"
+                            android:layout_gravity="center"
+                            android:layout_width="0.6dp"
+                            android:layout_height="65dp"/>
+
+
+                        <LinearLayout
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:layout_width="118dp"
+                            android:layout_height="match_parent">
+
+
+
+                            <TextView
+
+                                android:id="@+id/roundsTV"
+                                android:gravity="center"
+                                android:fontFamily="@font/cav"
+                                android:text="2"
+                                android:textSize="20sp"
+                                android:textColor="#000"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"/>
+
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/cav"
+                                android:text="ROUNDS"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                        <View
+                            android:background="#25000000"
+                            android:layout_gravity="center"
+                            android:layout_width="0.6dp"
+                            android:layout_height="65dp"/>
+
+
+                        <LinearLayout
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:layout_width="118dp"
+                            android:layout_height="match_parent">
+
+
+
+                            <TextView
+                                android:id="@+id/typeTV"
+                                android:gravity="center"
+                                android:fontFamily="@font/cav"
+                                android:text="GROUP"
+                                android:textSize="20sp"
+                                android:textColor="#43A047"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"/>
+
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/cav"
+                                android:text="TYPE"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="#25000000"
+                            android:layout_gravity="center"
+                            android:layout_width="0.6dp"
+                            android:layout_height="65dp"/>
+
+
+                        <LinearLayout
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:layout_width="118dp"
+                            android:layout_height="match_parent">
+
+
+
+                            <TextView
+                                android:id="@+id/eventDataTV"
+                                android:gravity="center"
+                                android:fontFamily="@font/cav"
+                                android:text="16th FEB"
+                                android:textSize="20sp"
+                                android:textColor="#000"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"/>
+
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/cav"
+                                android:text="DATE"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+                        <View
+                            android:background="#25000000"
+                            android:layout_gravity="center"
+                            android:layout_width="0.6dp"
+                            android:layout_height="65dp"/>
+
+
+                        <LinearLayout
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            android:layout_width="118dp"
+                            android:layout_height="match_parent">
+
+
+
+                            <TextView
+                                android:id="@+id/timeTV"
+                                android:gravity="center"
+                                android:fontFamily="@font/cav"
+                                android:text="8:00 AM"
+                                android:textSize="16sp"
+                                android:textColor="#000"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"/>
+
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/cav"
+                                android:text="TIME"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </HorizontalScrollView>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_below="@id/lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/noteCard"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                android:elevation="3dp"
+                app:cardCornerRadius="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/noteTV"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*NOTE : "
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_note"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/cav"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/locCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="3dp"
+                    app:cardCornerRadius="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/locTV"
+                        android:padding="12dp"
+                        android:drawablePadding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" VENUE : "
+                        android:drawableStart="@drawable/ic_location"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/cav"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/locCard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="3dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/locTV2"
+                        android:padding="12dp"
+                        android:drawablePadding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" VENUE : "
+                        android:drawableStart="@drawable/ic_location"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/cav"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/themeCard"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="3dp"
+                    app:cardCornerRadius="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/themeTV"
+                        android:padding="12dp"
+                        android:drawablePadding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" THEME : "
+                        android:drawableStart="@drawable/ic_star"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/cav"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <include
+                    layout="@layout/rules_layout"/>
+
+                <include
+                    android:id="@+id/desing_layout"
+                    android:visibility="gone"
+                    layout="@layout/design_constraint"/>
+
+                <include
+                    android:visibility="gone"
+                    android:id="@+id/specification_layout"
+                    layout="@layout/specification_layout"/>
+
+
+
+                <include
+                    layout="@layout/guidelines_layout"/>
+
+                <include
+                    android:visibility="gone"
+                    android:id="@+id/extra_layout"
+                    layout="@layout/extra_details_layout"/>
+
+                <include
+                    android:id="@+id/judgeLayout"
+                    layout="@layout/judging_criteria"/>
+
+
+                <Button
+                    android:layout_marginTop="@dimen/Padding_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:onClick="addToCalender"
+                    android:textColor="@color/white"
+                    android:background="@drawable/oval_btn"
+                    android:fontFamily="@font/cav"
+                    android:layout_marginBottom="@dimen/Padding_10"
+                    android:text="ADD TO CALENDER"/>
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:onClick="showOnMap"
+                    android:textColor="@color/white"
+                    android:background="@drawable/oval_btn2"
+                    android:fontFamily="@font/cav"
+                    android:layout_marginBottom="@dimen/Padding_20"
+                    android:text="FIND ON MAP"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
