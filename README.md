@@ -36,19 +36,19 @@
 &nbsp;
 [![GitHub followers](https://img.shields.io/github/followers/satyajiit?style=social&label=Follow&maxAge=2592000)](https://github.com/satyajiit?tab=followers)
 
-<img src="/Screen/1.png" height="583" width="350" />&nbsp;
-<img src="/Screen/2.png" height="583" width="350" />&nbsp;
-<img src="/Screen/3.png" height="583" width="350" />&nbsp;
-<img src="/Screen/4.png" height="583" width="350" />&nbsp;
-<img src="/Screen/5.png" height="583" width="350"/>&nbsp;
-<img src="/Screen/6.png" height="583" width="350" />&nbsp;
-<img src="/Screen/8.png" height="583" width="350" />&nbsp;
-<img src="/Screen/9.png" height="583" width="350" />&nbsp;
-<img src="/Screen/10.png" height="583" width="350" />&nbsp;
-<img src="/Screen/11.png" height="583" width="350" />&nbsp;
-<img src="/Screen/12.png" height="583" width="350" />&nbsp;
-<img src="/Screen/13.png" height="583" width="350" />&nbsp;
-<img src="/Screen/14.png" height="583" width="350" />&nbsp;
+<img src="/Screen/1.png" height="583" width="350" />&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="/Screen/2.png" height="583" width="350" />&nbsp;<br><br><br>
+<img src="/Screen/3.png" height="583" width="350" />&nbsp; &nbsp;&nbsp;&nbsp;
+<img src="/Screen/4.png" height="583" width="350" />&nbsp; <br><br><br>
+<img src="/Screen/5.png" height="583" width="350"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="/Screen/6.png" height="583" width="350" />&nbsp;<br><br><br>
+<img src="/Screen/8.png" height="583" width="350" />&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="/Screen/9.png" height="583" width="350" />&nbsp;<br><br><br>
+<img src="/Screen/10.png" height="583" width="350" />&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="/Screen/11.png" height="583" width="350" />&nbsp;<br><br><br>
+<img src="/Screen/12.png" height="583" width="350" />&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="/Screen/13.png" height="583" width="350" />&nbsp;<br><br><br>
+<img src="/Screen/14.png" height="583" width="350" />&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/Screen/15.png" height="583" width="350" />&nbsp;
 
 ### Code Quality : 6/10
