@@ -30,6 +30,13 @@
 * Detailed inforamtion about each event. 🎀
 * Backed with Firebase - Firestore and Storage 🙂
 
+#### SUPPORT THE WORK & DEV
+
+[![GitHub stars](https://img.shields.io/github/forks/satyajiit/BooksBay?style=social)](https://github.com/satyajiit/YouthVibe2020/network) &nbsp;
+[![GitHub stars](https://img.shields.io/github/stars/satyajiit/YouthVibe2020?style=social)](https://github.com/satyajiit/BooksBay/stargazers)
+&nbsp;
+[![GitHub followers](https://img.shields.io/github/followers/satyajiit?style=social&label=Follow&maxAge=2592000)](https://github.com/satyajiit?tab=followers)
+
 <img src="/Screen/1.png" height="583" width="350" />&nbsp;
 <img src="/Screen/2.png" height="583" width="350" />&nbsp;
 <img src="/Screen/3.png" height="583" width="350" />&nbsp;
@@ -49,3 +56,5 @@
 
 #### Lots of Hardwork has been made on this project
 [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://satyajiit.xyz)
+[![GitHub followers](https://img.shields.io/github/followers/satyajiit?style=social&label=Follow&maxAge=2592000)](https://github.com/satyajiit?tab=followers) <br>
+[![LinkedIN](/Screen/link.png)](https://www.linkedin.com/in/satyajiit/)
