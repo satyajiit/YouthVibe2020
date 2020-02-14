@@ -31,8 +31,8 @@
 
 #### SUPPORT THE WORK & DEV
 
-[![GitHub stars](https://img.shields.io/github/forks/satyajiit/BooksBay?style=social)](https://github.com/satyajiit/YouthVibe2020/network) &nbsp;
-[![GitHub stars](https://img.shields.io/github/stars/satyajiit/YouthVibe2020?style=social)](https://github.com/satyajiit/BooksBay/stargazers)
+[![GitHub stars](https://img.shields.io/github/forks/satyajiit/YouthVibe2020?style=social)](https://github.com/satyajiit/YouthVibe2020/network) &nbsp;
+[![GitHub stars](https://img.shields.io/github/stars/satyajiit/YouthVibe2020?style=social)](https://github.com/satyajiit/YouthVibe2020/stargazers)
 &nbsp;
 [![GitHub followers](https://img.shields.io/github/followers/satyajiit?style=social&label=Follow&maxAge=2592000)](https://github.com/satyajiit?tab=followers)
 
