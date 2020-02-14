@@ -14,7 +14,6 @@
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](#)
 
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](#)
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-oxygen.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/ages-12.svg)](#)
 
 * LPU's Global fest YouthVibe Official Android App
