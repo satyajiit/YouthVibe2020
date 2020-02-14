@@ -141,6 +141,16 @@ public class SplashActivity extends AppCompatActivity {
     }
 
 
+//    private void processAfterDownload() {
+//
+//
+//        getSharedPreferences("YV",MODE_PRIVATE).edit().putLong("lastSync",System.currentTimeMillis()).apply();
+//
+//        lunchIntent();
+//
+//    Log.d("LOGGED","CONGRATS");
+//
+//    }
 
 
     void lunchIntent(){

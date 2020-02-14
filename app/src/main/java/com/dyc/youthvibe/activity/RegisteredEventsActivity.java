@@ -7,6 +7,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.dyc.youthvibe.FaqFragments.RegisteredEventsSingleFragment;
 import com.dyc.youthvibe.R;
@@ -23,6 +24,8 @@ public class RegisteredEventsActivity extends AppCompatActivity {
     ViewPager viewPager;
     TabLayout tabLayout;
     TabAdapter tabAdapter;
+
+    TextView emptyTV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,9 +100,13 @@ public class RegisteredEventsActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tabLayout);
         viewPager = findViewById(R.id.viewPager);
 
+
+
+
         tabAdapter = new TabAdapter(getSupportFragmentManager());
         tabAdapter.addFragment(new RegisteredEventsSingleFragment("solo_events"), "SOLO EVENTS");
         tabAdapter.addFragment(new RegisteredEventsSingleFragment("team_events"), "GROUP EVENTS");
+        tabAdapter.addFragment(new RegisteredEventsSingleFragment("workshops"), "WORKSHOPS");
         viewPager.setAdapter(tabAdapter);
 
 

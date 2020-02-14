@@ -31,6 +31,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.dyc.youthvibe.R;
+import com.dyc.youthvibe.fragments.BlogsFragment;
 import com.dyc.youthvibe.fragments.HomeFragment;
 import com.dyc.youthvibe.fragments.ProfileFragment;
 import com.dyc.youthvibe.fragments.ScheduleFragment;
@@ -88,6 +89,11 @@ public class MainActivity extends AppCompatActivity{
 
                     break;
 
+                case R.id.navigation_blogs:
+                    fragment = BlogsFragment.newInstance();
+
+                    break;
+
             }
 
             if (fragment != null) {
@@ -107,6 +113,7 @@ public class MainActivity extends AppCompatActivity{
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event)  {
+
         if (Build.VERSION.SDK_INT > 5
                 && keyCode == KeyEvent.KEYCODE_BACK
                 && event.getRepeatCount() == 0) {

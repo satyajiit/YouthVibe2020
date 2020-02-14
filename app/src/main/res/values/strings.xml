@@ -40,7 +40,7 @@
     <string name="exit">Are you sure to exit?</string>
     <string name="noInternet">Some of the App resources are depended on Internet Connectivity to load. It is recommended to enable Internet.</string>
     <string name="new_update">A new update version is Available which brings new features and bug fixes.</string>
-
+    <string name="menu_blogs">BLOGS</string>
 
 
 </resources>

@@ -22,6 +22,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -31,6 +32,7 @@ import com.dyc.youthvibe.BuildConfig;
 import com.dyc.youthvibe.R;
 import com.dyc.youthvibe.activity.LoginActivity;
 import com.dyc.youthvibe.activity.MainActivity;
+import com.dyc.youthvibe.activity.OwnBlogsActivity;
 import com.dyc.youthvibe.activity.RegisteredEventsActivity;
 import com.dyc.youthvibe.utils.jsonLoader;
 import com.google.firebase.messaging.FirebaseMessaging;
@@ -59,16 +61,20 @@ public class ProfileFragment extends Fragment {
         return new ProfileFragment();
     }
 
-    TextView bugClick, logout, mobileTV, dobTV, fatherTV, mailTV, name_user, cllg_user, yv_id, soloTV, groupTV;
+    TextView bugClick, logout, mobileTV, dobTV, fatherTV, mailTV, name_user, cllg_user, yv_id, soloTV, groupTV, workshopsTV,
+            daysTV, amountTV, durationTV;
+
+    LinearLayout accommodationLin;
 
     ImageView qrImage;
 
-    LinearLayout clicker2, clicker1;
+    LinearLayout clicker2, clicker1, clicker3;
 
     String mobileUser, username, uid;
 
     JSONObject jsonObject;
 
+    Button ownPosts;
 
 
     public ProfileFragment() {
@@ -122,9 +128,9 @@ public class ProfileFragment extends Fragment {
 
     void fetchDetails(){
 
-        uid = "YB5656";
-        mobileUser = "8984122606";
-        username = "Satyajit";
+        uid = getActivity().getSharedPreferences("YV",MODE_PRIVATE).getString("ID","NA");
+        mobileUser = getActivity().getSharedPreferences("YV",MODE_PRIVATE).getString("mobile","NA");
+        username = getActivity().getSharedPreferences("YV",MODE_PRIVATE).getString("name","NA");
 
     }
 
@@ -136,14 +142,23 @@ public class ProfileFragment extends Fragment {
         dobTV = view.findViewById(R.id.dobTV);
         fatherTV = view.findViewById(R.id.fatherTV);
         mailTV = view.findViewById(R.id.mailTV);
+        ownPosts = view.findViewById(R.id.ownPosts);
         logout = view.findViewById(R.id.logout);
         name_user = view.findViewById(R.id.name_user);
         cllg_user = view.findViewById(R.id.cllg_user);
         yv_id = view.findViewById(R.id.yv_id);
         clicker1 = view.findViewById(R.id.clicker1);
         clicker2 = view.findViewById(R.id.clicker2);
+        clicker3 = view.findViewById(R.id.clicker3);
         soloTV = view.findViewById(R.id.soloTV);
         groupTV = view.findViewById(R.id.groupTV);
+        workshopsTV = view.findViewById(R.id.workshopsTV);
+
+        daysTV = view.findViewById(R.id.daysTV);
+        durationTV = view.findViewById(R.id.durationTV);
+        amountTV = view.findViewById(R.id.amountTV);
+
+        accommodationLin = view.findViewById(R.id.accommodationLin);
 
 
         try {
@@ -155,6 +170,16 @@ public class ProfileFragment extends Fragment {
     }
 
 void setUpListeners(){
+
+    ownPosts.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+
+            startActivity(new Intent(getActivity(), OwnBlogsActivity.class));
+            getActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+
+        }
+    });
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -201,6 +226,19 @@ void setUpListeners(){
             }
     });
 
+    clicker3.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            if (workshopsTV.getText().equals("0"))
+                Toast.makeText(getActivity(), "You have registered zero  Workshops.", Toast.LENGTH_SHORT).show();
+            else {
+                startActivity(new Intent(getActivity(), RegisteredEventsActivity.class).putExtra("start", 3));
+                getActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            }
+
+        }
+    });
+
 
 
     bugClick.setOnClickListener(new View.OnClickListener() {
@@ -208,8 +246,12 @@ void setUpListeners(){
             public void onClick(View view) {
 
                 String bugMsgBody = "Bug Title : \n\nSteps to reproduce : \n\n\n\nDoes the bug has anything to do with the user privacy? \n\n[YES/NO]\n\n[Attach Some Screenshots if Possible]   \n" +
-                        "\nSent by : "+username+" \nYV ID: "+uid+"\nMobile: "+  mobileUser+  "\nVersion Name: "+ BuildConfig.VERSION_NAME+"\n Version Code: "+BuildConfig.VERSION_CODE+
-                        "\n Android OS: "+ Build.VERSION.RELEASE+"\nDevice: "+Build.MANUFACTURER+" "+android.os.Build.MODEL;
+                        "\nSent by : "+username+" \nYV ID: "+uid+"\nMobile: "
+                        +  mobileUser+  "\nVersion Name: "
+                        + BuildConfig.VERSION_NAME
+                        +"\n Version Code: "+BuildConfig.VERSION_CODE+
+                        "\n Android OS: "+ Build.VERSION.RELEASE
+                        +"\nDevice: "+Build.MANUFACTURER+" "+android.os.Build.MODEL;
 
 
                 Intent i = new Intent(Intent.ACTION_SEND);
@@ -288,6 +330,18 @@ void setUpListeners(){
             groupTV.setText(String.valueOf(jsonObject.getJSONArray("team_events").length()));
 
             soloTV.setText(String.valueOf(jsonObject.getJSONArray("solo_events").length()));
+
+            workshopsTV.setText(String.valueOf(jsonObject.getJSONArray("workshops").length()));
+
+
+            if (!jsonObject.isNull("accomodation")) {
+                daysTV.setText("Days Registered: " + jsonObject.getJSONObject("accomodation").getString("days"));
+                amountTV.setText("Amount Paid: Rs" + jsonObject.getJSONObject("accomodation").getInt("ammount"));
+                durationTV.setText("Duration: " + jsonObject.getJSONObject("accomodation").getString("from") + " - " + jsonObject.getJSONObject("accomodation").getString("to"));
+            }
+
+            else accommodationLin.setVisibility(View.GONE);
+
 
         } catch (JSONException e) {
             e.printStackTrace();

@@ -51,7 +51,6 @@ public class PopUtil {
         final Dialog dialog = new Dialog(context);
         dialog.setCancelable(true);
         dialog.setCanceledOnTouchOutside(true);
-        dialog.setCancelable(true);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         if (type == 1) {

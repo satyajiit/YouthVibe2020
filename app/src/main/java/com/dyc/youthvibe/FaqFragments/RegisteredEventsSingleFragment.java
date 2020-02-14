@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -29,6 +30,7 @@ public class RegisteredEventsSingleFragment extends Fragment{
     private List<RegisteredModel> faqList = new ArrayList<>();
     String data;
     RegisteredEventsAdapter adapter;
+    TextView emptyTV;
 
     public RegisteredEventsSingleFragment(String data) {
         // Required empty public constructor
@@ -47,6 +49,7 @@ public class RegisteredEventsSingleFragment extends Fragment{
         initUI(view);
 
 
+
         setUpRecycler();
 
 
@@ -57,7 +60,7 @@ public class RegisteredEventsSingleFragment extends Fragment{
     void initUI(View v){
 
         faqListRecycler = v.findViewById(R.id.faqListRecycler);
-
+        emptyTV= v.findViewById(R.id.emptyTV);
 
 
 
@@ -75,47 +78,62 @@ public class RegisteredEventsSingleFragment extends Fragment{
         adapter.setHasStableIds(true);
         faqListRecycler.setAdapter(adapter);
 
-JSONObject jsonObject;
-        JSONArray jsonArray;
+        if (faqList.size()==0) {
 
-        RegisteredModel registeredModel;
+            JSONObject jsonObject;
+            JSONArray jsonArray;
 
-        try {
-            jsonObject = new jsonLoader(getActivity(), "profile.json").loadJSONFromAsset();
-            jsonArray = jsonObject.getJSONArray(data);
+            RegisteredModel registeredModel;
 
+            try {
 
-            if (data.equals("solo_events"))
-
-            for (int i=0; i<jsonArray.length();i++){
+                jsonObject = new jsonLoader(getActivity(), "profile.json").loadJSONFromAsset();
+                jsonArray = jsonObject.getJSONArray(data);
 
 
-                registeredModel = new RegisteredModel(jsonArray.getJSONObject(i).getString("name"),"0","0");
+                if (data.equals("solo_events"))
 
-                faqList.add(registeredModel);
+                    for (int i = 0; i < jsonArray.length(); i++) {
 
+
+                        registeredModel = new RegisteredModel(jsonArray.getJSONObject(i).getString("name"), "0", "0");
+
+                        faqList.add(registeredModel);
+
+                    }
+
+                else if (data.equals("workshops"))
+
+                    for (int i = 0; i < jsonArray.length(); i++) {
+
+
+                        registeredModel = new RegisteredModel(jsonArray.getJSONObject(i).getString("name"), "0", "0");
+
+                        faqList.add(registeredModel);
+
+                    }
+
+                else
+
+                    for (int i = 0; i < jsonArray.length(); i++) {
+
+
+                        registeredModel = new RegisteredModel(jsonArray.getJSONObject(i).getString("name"), jsonArray.getJSONObject(i).getString("team_name"),
+                                jsonArray.getJSONObject(i).getString("team_code"));
+
+                        faqList.add(registeredModel);
+
+                    }
+
+            } catch (FileNotFoundException | JSONException e) {
+                e.printStackTrace();
             }
 
-            else
 
-                for (int i=0; i<jsonArray.length();i++){
-
-
-                    registeredModel = new RegisteredModel(jsonArray.getJSONObject(i).getString("name"),jsonArray.getJSONObject(i).getString("team_name"),
-                            jsonArray.getJSONObject(i).getString("team_code"));
-
-                    faqList.add(registeredModel);
-
-                }
-
-        } catch (FileNotFoundException | JSONException e) {
-            e.printStackTrace();
         }
 
-
-
-
-
+        if (adapter.getItemCount()==0)
+            emptyTV.setVisibility(View.VISIBLE);
 
         adapter.notifyDataSetChanged();
 

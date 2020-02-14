@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
 
@@ -94,12 +94,16 @@
                 android:textSize="20sp"
                 android:fontFamily="@font/cav"/>
 
-            <LinearLayout
-                android:orientation="horizontal"
+            <HorizontalScrollView
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:scrollbars="none"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
@@ -116,8 +120,8 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_width="140dp"
-                        android:layout_height="140dp">
+                        android:layout_width="135dp"
+                        android:layout_height="135dp">
 
                         <TextView
                             android:paddingStart="5dp"
@@ -180,8 +184,8 @@
                         android:focusable="true"
                         android:background="#0288D1"
                         android:foreground="?android:attr/selectableItemBackground"
-                        android:layout_width="140dp"
-                        android:layout_height="140dp">
+                        android:layout_width="135dp"
+                        android:layout_height="135dp">
 
                         <TextView
                             android:paddingStart="5dp"
@@ -227,10 +231,71 @@
                 </androidx.cardview.widget.CardView>
 
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_gravity="center"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/clicker3"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="#FB8C00"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="135dp"
+                        android:layout_height="135dp">
+
+                        <TextView
+                            android:paddingStart="5dp"
+                            android:paddingEnd="0dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/cav"
+                            android:textColor="@color/white"
+                            android:text="WORKSHOP"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/workshopsTV"
+                            android:gravity="center"
+                            android:fontFamily="@font/cav"
+                            android:text="2"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="8dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"/>
+
+                        <TextView
+                            android:paddingStart="5dp"
+                            android:paddingEnd="0dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/cav"
+                            android:text="( Open )"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
 
 
+                    </LinearLayout>
 
-            </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
 
 
             <TextView
@@ -357,11 +422,128 @@
 
             </androidx.cardview.widget.CardView>
 
+
+            <LinearLayout
+                android:id="@+id/accommodationLin"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Accommodation Details: "
+                android:textColor="@color/colorPrimary"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingStart="@dimen/padding_10"
+                android:paddingEnd="@dimen/padding_10"
+                android:textSize="20sp"
+                android:fontFamily="@font/cav"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="5dp"
+                android:foreground="?android:selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/padding_10"
+                android:layout_marginEnd="@dimen/padding_10"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:id="@+id/daysTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cav"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:text="Father's Name : Testing"
+                    android:padding="@dimen/padding_10"
+                    android:drawableStart="@drawable/ic_home_black_24dp"
+                    android:drawablePadding="5dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="5dp"
+                android:foreground="?android:selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/padding_10"
+                android:layout_marginEnd="@dimen/padding_10"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:id="@+id/amountTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cav"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:text="DOB : 17/11/2000"
+                    android:padding="@dimen/padding_10"
+                    android:drawableStart="@drawable/ic_person_black"
+                    android:drawablePadding="5dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="5dp"
+                android:foreground="?android:selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/padding_10"
+                android:layout_marginEnd="@dimen/padding_10"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:id="@+id/durationTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cav"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:text="Mobile: 8984122606"
+                    android:padding="@dimen/padding_10"
+                    android:drawableStart="@drawable/ic_access_time_black_24dp"
+                    android:drawablePadding="5dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
             <Button
-                android:id="@+id/logout"
+                android:id="@+id/ownPosts"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_marginTop="@dimen/Padding_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY BLOGS"
+                android:fontFamily="@font/cav"
+                android:textColor="@color/white"
+                android:background="@drawable/oval_btn2"/>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_marginTop="@dimen/Padding_10"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="LogOut"

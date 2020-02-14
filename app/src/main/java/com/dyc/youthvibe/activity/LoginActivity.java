@@ -41,6 +41,7 @@ import com.android.volley.toolbox.Volley;
 import com.dyc.youthvibe.R;
 import com.dyc.youthvibe.utils.PopUtil;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import org.json.JSONException;
@@ -53,7 +54,7 @@ import java.util.Map;
 public class LoginActivity extends AppCompatActivity {
 
     Toolbar toolbar ;
-    EditText editTextEmail, editTextPassword;
+    TextInputEditText editTextEmail, editTextPassword;
     Button cirLoginButton;
     Typeface font;
     ImageView lv2;
@@ -212,7 +213,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-        String url = "Your API URL";
+        String url = "YOUR API";
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>()
                 {
@@ -236,7 +237,16 @@ public class LoginActivity extends AppCompatActivity {
                                         .getString("yvnumber")).apply();
                                 getSharedPreferences("YV",MODE_PRIVATE).edit().putString("name",new JSONObject(response)
                                         .getString("name")).apply();
+
+                                getSharedPreferences("YV",MODE_PRIVATE).edit().putString("cllg",new JSONObject(response)
+                                        .getString("college")).apply();
+
+                                getSharedPreferences("YV",MODE_PRIVATE).edit().putString("mobile",new JSONObject(response)
+                                        .getString("contact")).apply();
+
                                 getSharedPreferences("YV",MODE_PRIVATE).edit().putString("email",editTextEmail.getText().toString()).apply();
+
+
                                 getSharedPreferences("YV",MODE_PRIVATE).edit().putString("pass",editTextPassword.getText().toString()).apply();
 
                             } catch (JSONException e) {

@@ -41,6 +41,7 @@
         android:elevation="10dp"
         android:background="@color/colorPrimary"
         app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
         app:itemIconTint="@drawable/selector"
         android:theme="@style/navStyle"
         android:layout_alignParentBottom="true"

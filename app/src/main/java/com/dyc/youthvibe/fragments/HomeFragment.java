@@ -68,11 +68,7 @@ public class HomeFragment extends Fragment {
     }
 
     void initUI(View v){
-//
-//        fb_opener = v.findViewById(R.id.fb_opener);
-//        ig_opener = v.findViewById(R.id.ig_opener);
-//        yt_opener = v.findViewById(R.id.yt_opener);
-//        link_opener = v.findViewById(R.id.link_opener);
+
         vibeCrd = v.findViewById(R.id.vibeCrd);
         crdEnq = v.findViewById(R.id.crdEnq);
         faq_lin = v.findViewById(R.id.faq_lin);
